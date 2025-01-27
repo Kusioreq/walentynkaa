@@ -65,25 +65,27 @@
         .choice-container {
             margin-top: 20px;
         }
-              .teddy {
-    width: 100%;
-    max-width: 300px; /* Ustalamy maksymalną szerokość obrazka */
-    height: auto; /* Zachowujemy proporcje zdjęcia */
-    object-fit: contain; /* Sprawia, że obrazek nie jest zniekształcony */
+   .tedy {
+    width: 50%; /* Domyślnie ustawiamy szerokość na 50% dla komputerów */
+    max-width: 600px; /* Maksymalna szerokość obrazka */
+    height: auto; /* Zachowanie proporcji */
     display: block;
     margin: 0 auto;
-    max-height: 70vh; /* Ustalamy maksymalną wysokość obrazka na 70% wysokości ekranu */
-    animation: appear 1s ease-in-out;
+         animation: appear 1s ease-in-out;
 }
 
 /* Media query dla urządzeń mobilnych */
 @media (max-width: 600px) {
-    .teddy {
-        width: 90%; /* Dostosowujemy szerokość do 90% ekranu */
-        max-width: 90%; /* Maksymalna szerokość dla małych ekranów */
-        max-height: 50vh; /* Maksymalna wysokość na urządzeniach mobilnych */
-    }
+    .tedy {
+        width: 80%; /* Na telefonach ustawiamy szerokość na 80% ekranu */
+        max-width: 300px; /* Maksymalna szerokość na urządzeniach mobilnych */
+
+
+    animation: appear 1s ease-in-out;
 }
+}
+
+
         .love-message {
             font-size: 2rem;
             color: #ff6f61;
